@@ -1,0 +1,173 @@
+openapi: 3.0.0
+info:
+  title: "FAZZ-4 Military Core API"
+  version: "1.0.0-alpha"
+  description: |
+    FAZZ-4 Military Core protokolünün durumunu, verimlilik metriklerini ve operasyonel parametrelerini sunan resmi API.
+    Bu API, motor ısıtmadan %35 verimlilik hedefini ve 0.99 asimptotunu doğrulamak için tasarlanmıştır.
+    Anayasa Referansları: Madde 2.1, Madde 8.3, Madde 9.
+  contact:
+    name: "Mimar Emrah Uzuçar, CEO"
+    email: "admin@blueline-arch.company"
+servers:
+  - url: "https://api.fazz4.blueline-arch.company/v1"
+    description: "Production Server"
+tags:
+  - name: "military-core"
+    description: "FAZZ-4 Military Core motoru ile ilgili operasyonlar."
+
+paths:
+  /military/status:
+    get:
+      tags:
+        - "military-core"
+      summary: "Sistemin genel durumunu alır."
+      description: "Military Core'un anlık operasyonel durumunu, asimptot hedefini ve termal verimlilik artışını döndürür."
+      operationId: "get_military_status"
+      responses:
+        '200':
+          description: "Sistem durumu başarıyla alındı."
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MilitaryCoreStatus'
+  /military/efficiency:
+    get:
+      tags:
+        - "military-core"
+      summary: "Detaylı verimlilik metriklerini alır."
+      description: "Giriş gücü, kullanılabilir iş, motor ısısı ve sistem ısısı dahil olmak üzere detaylı verimlilik dökümünü sağlar."
+      operationId: "get_efficiency_metrics"
+      responses:
+        '200':
+          description: "Verimlilik metrikleri başarıyla alındı."
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EfficiencyMetrics'
+  /military/transistor:
+    get:
+      tags:
+        - "military-core"
+      summary: "Transistör konfigürasyonunu ve durumunu alır."
+      description: "Çekirdek transistörün Base-Emitter kısa devre konfigürasyonunu ve 'CUTOFF' durumundaki anlık elektriksel değerlerini döndürür."
+      operationId: "get_transistor_config"
+      responses:
+        '200':
+          description: "Transistör bilgisi başarıyla alındı."
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TransistorState'
+  /military/motor:
+    get:
+      tags:
+        - "military-core"
+      summary: "Motor optimizasyon parametrelerini alır."
+      description: "Sıfır motor ısısı hedefini korumak için hesaplanan PWM görev döngüsü, anahtarlama frekansı ve güç değerleri gibi optimizasyon parametrelerini sağlar."
+      operationId: "get_motor_optimization"
+      responses:
+        '200':
+          description: "Motor optimizasyon parametreleri başarıyla alındı."
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MotorOptimization'
+  /military/convergence:
+    get:
+      tags:
+        - "military-core"
+      summary: "Asimptotik yakınsama verilerini alır."
+      description: "Sistemin verimliliğinin 0.99 hedefine zaman içinde nasıl yakınsadığını gösteren simülasyon veri noktalarını döndürür."
+      operationId: "get_asymptotic_convergence"
+      responses:
+        '200':
+          description: "Yakınsama verileri başarıyla alındı."
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AsymptoticConvergence'
+
+components:
+  schemas:
+    MilitaryCoreStatus:
+      type: "object"
+      properties:
+        system_status:
+          type: "string"
+          example: "OPTIMIZED"
+        asymptote:
+          type: "number"
+          format: "float"
+          example: 0.99
+        thermal_efficiency_boost_percent:
+          type: "integer"
+          example: 35
+        timestamp:
+          type: "string"
+          format: "date-time"
+    EfficiencyMetrics:
+      type: "object"
+      properties:
+        input_power_watts:
+          type: "number"
+          format: "float"
+          example: 100.0
+        useful_work_watts:
+          type: "number"
+          format: "float"
+          example: 35.0
+        motor_heat_watts:
+          type: "number"
+          format: "float"
+          example: 0.0
+        system_heat_watts:
+          type: "number"
+          format: "float"
+          example: 65.0
+        efficiency_percent:
+          type: "number"
+          format: "float"
+          example: 35.0
+        asymptote_approach:
+          type: "number"
+          format: "float"
+          example: 0.3499999999965
+    TransistorState:
+      type: "object"
+      properties:
+        v_be: { type: "number", format: "float", example: 0.0 }
+        v_ce: { type: "number", format: "float", example: 12.0 }
+        i_base: { type: "number", format: "float", example: 0.0 }
+        i_collector: { type: "number", format: "float", example: 1.0e-9 }
+        power_dissipation_watts: { type: "number", format: "float", example: 1.2e-8 }
+        state: { type: "string", example: "CUTOFF" }
+        configuration: { type: "string", example: "BASE_EMITTER_SHORT" }
+    MotorOptimization:
+      type: "object"
+      properties:
+        mechanical_power_watts: { type: "number", format: "float" }
+        input_power_watts: { type: "number", format: "float" }
+        pwm_duty_cycle: { type: "number", format: "float", example: 0.35 }
+        switching_frequency_khz: { type: "number", format: "float", example: 20.0 }
+        regenerative_efficiency: { type: "number", format: "float", example: 0.85 }
+        motor_heat_watts: { type: "number", format: "float", example: 0.0 }
+        estimated_motor_temp_celsius: { type: "number", format: "float", example: 25.0 }
+        optimization_status: { type: "string", example: "OPTIMIZED" }
+    AsymptoticConvergence:
+      type: "object"
+      properties:
+        target_asymptote:
+          type: "number"
+          format: "float"
+          example: 0.99
+        convergence_points:
+          type: "array"
+          items:
+            $ref: '#/components/schemas/ConvergencePoint'
+    ConvergencePoint:
+      type: "object"
+      properties:
+        iteration: { type: "integer" }
+        efficiency: { type: "number", format: "float" }
+        distance_from_target: { type: "number", format: "float" }
