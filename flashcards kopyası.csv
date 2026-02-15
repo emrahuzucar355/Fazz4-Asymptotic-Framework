@@ -1,0 +1,65 @@
+Fazz-4 Protokol Sisteminin Mac M2 üzerindeki birincil amacı nedir?,"En yüksek performans, güvenlik ve ölçeklenebilirlik ile operasyonel hale getirilmesi."
+Fazz-4 mimarisinde bir katmanın iletişim kurabileceği katmanlar hangileridir?,Her katman sadece kendinden bir alt katmanla iletişim kurabilir.
+Fazz-4 mimari kurallarına göre 'Domain' katmanının dış bağımlılık durumu ne olmalıdır?,Domain katmanı hiçbir dış bağımlılığa sahip olamaz.
+Platform bağımsızlığını sağlamak için Fazz-4'te hangi tasarım deseni (pattern) kullanılır?,Adapter pattern.
+Apple Silicon optimizasyonu kapsamında kritik modüllerin derlenme formatı ne olmalıdır?,Tüm kritik modüller ARM64 native olarak derlenmelidir.
+Fazz-4 sisteminde GPU yoğun işlemler için hangi API'nin kullanılması tavsiye edilir?,Metal API.
+Fazz-4 sisteminde veri validasyonu için kullanılan zorunlu arayüz (interface) hangisidir?,IValidatable.
+Fazz-4 sisteminde minor versiyon değişimlerinde API uyumluluğu kuralı nedir?,API uyumluluğu korunmalıdır (Backward Compatibility).
+Fazz-4 şifreleme standartlarına göre simetrik şifreleme için ne kullanılır?,$AES-256-GCM$.
+Fazz-4'te kritik veri paketlerinin bütünlüğünü doğrulamak için hangi hashing algoritması zorunludur?,$SHA-256$.
+Fazz-4 Python kodlama standartlarında fonksiyon başına izin verilen maksimum karmaşıklık (McCabe score) kaçtır?,10 veya daha az.
+Fazz-4 standartlarına göre bir fonksiyonun sahip olabileceği maksimum satır sayısı kaçtır?,50 satır.
+Fazz-4 sisteminde hedeflenen minimum unit test coverage oranı kaçtır?,$\%80$.
+Fazz-4 performans hedeflerine göre P99 API yanıt süresi ne kadar olmalıdır?,$<200ms$.
+Fazz-4 sisteminde boşta (idle) beklenen maksimum bellek kullanımı (memory footprint) nedir?,$<500MB$.
+Fazz-4'teki 'Altlama' protokolünün temel tanımı nedir?,"İnsan hedeflerinin ve kaynak limitlerinin fiziksel yasalara (entropi, geri döndürülemezlik) mutlak tabi kılınmasıdır."
+Fazz-4'teki 'Derzz' protokolü hangi işlevi görür?,"Fiziksel yasaların yarattığı boşlukları yöneten, yapay zeka aracılı adaptif süreçtir."
+Fazz-4 'Kavramsal Sabit' (Conceptual Constant) üçgenini oluşturan üç bileşen nedir?,"Işık hızı, mutlak sıfır ve kavrama yansıması."
+"Fazz-4 teorisine göre mesafe ($l$), zaman ($t$) ve ışık hızı ($c$) arasındaki ilişkiyi gösteren formül nedir?",$l = c \cdot t$
+Fazz-4 teorisinde ışık hızı ($c$) bir hızdan ziyade neyi temsil eder?,Veri sıkıştırma oranını (rendering rate).
+Derzz Katmanındaki tam bağlı bir ağda doğrudan bağlantı sayısını hesaplayan formül nedir?,$K = \frac{n(n+1)}{2}$
+Fazz-4 manifestosuna göre 'kütle' (mass) kavramının tanımı nedir?,Durağan haldeki yüksek yoğunluklu bilgi veya hapsedilmiş zamandır.
+Fazz-4 'Military Core' konfigürasyonunda transistörün hangi ayakları kısa devre edilir?,Base (B) ve Emitter (E).
+Military Core sisteminin motoru ısıtmadan hedeflediği verimlilik artışı oranı kaçtır?,$\%35$.
+Military Core sistemindeki '$0.99$' asimptot değeri neyi ifade eder?,Enerji transferinin asimptotik olarak ideal duruma yaklaştığını.
+Gadolinyum Radyoliz Döngüsü ekran görüntüsündeki temel çıktı nedir?,Enerji katsayısının sonsuz döngüye girmesi (Enerji Hasadı).
+Radyasyon 'Besine' dönüştürülürken reaktör ısısı hangi değerde sabitlenmiştir?,$4.00^{\circ}C$.
+Fazz-4'te 'Discrete Horizon' (Ayrık Ufuk) neyi tanımlar?,Sürekli fiziksel tanımların enerjetik veya hesaplamalı kısıtlar nedeniyle çöktüğü sınırı.
+Fazz-4 mimarisinde 'Infrastructure Layer' (Altyapı Katmanı) hangi bileşeni içerir?,m2_optimizer.py (M2 Optimizer).
+Fazz-4 dokümantasyonunda API tanımları için hangi spesifikasyon zorunludur?,OpenAPI/Swagger.
+Fazz-4 sisteminde 'P50' API yanıt süresi hedefi nedir?,$<50ms$.
+Fazz-4 Web Cockpit entegrasyonu için önerilen hibrit dağıtım (deployment) modeli nedir?,Netlify (frontend) ve Mac M2 FastAPI (backend) kombinasyonu.
+Fazz-4 'Military Core' çözümünde $I^{2}R$ kayıplarını azaltmak için hangi teknik kullanılır?,PWM ile düşük RMS akımı.
+Fazz-4 terminolojisinde 'Kavrama Yansıması' neyin koşuludur?,Bir fenomenin bir gözlemci için anlamlı hale gelme koşuludur.
+"Fazz-4 mimarisinde kullanılan 'Clean Architecture' uyarınca, veri işleme hangi serviste bulunur?",src/services/data_processor.py
+Fazz-4 anayasasına göre 'Breaking Change' durumunda versiyonun hangi kısmı güncellenmelidir?,MAJOR versiyon.
+Fazz-4 sisteminde log saklama politikasına göre ERROR/CRITICAL logları ne kadar süreyle tutulur?,1 yıl.
+Fazz-4 sisteminde hata oranı (Error Rate) hangi eşiği geçerse 'Critical' alarmı verilir?,$\%10$.
+Fazz-4 'Military Core' sisteminde transistör hangi modda çalıştırılarak minimal güç kaybı sağlanır?,Cutoff (kapalı) durumu.
+Fazz-4 dokümantasyonunda her önemli mimari kararın kaydedildiği format nedir?,Architecture Decision Records (ADR).
+Fazz-4 anayasasına göre bir fonksiyonun alabileceği maksimum parametre sayısı kaçtır?,5 parametre.
+Fazz-4'e göre 'Propulsion' (İtki) yerine önerilen anlık yer değiştirme yöntemi nedir?,Frequency Matching (Frekans Eşleme).
+Fazz-4 ontolojik analizinde 'Altlama' kavramı İslam metafiziğindeki hangi kavrama benzetilir?,Ubudiyet (Kulluk/Teslimiyet).
+Fazz-4 ontolojik analizinde 'Derzz' kavramı İslam metafiziğindeki hangi işlevle eşleştirilir?,Hilafet ve Tedbir (Yönetme).
+Fazz-4'te 'Müdahaleci Bilim' (Interrupter) ve 'Kavrayan Bilim' (Resonator) arasındaki temel fark nedir?,Müdahaleci bilim doğayı manipüle eder; Kavrayan bilim sistemin doğal frekanslarıyla rezonansa girer.
+Fazz-4 teorisinde 'Berzah' kavramı fiziksel olarak neyi temsil eder?,Işık hızı ve Mutlak Sıfır gibi aşılamaz asimptotik sınırları.
+Fazz-4 'Tuzlu Su Kolonisi' projesinde tuzlu su hangi üç cevhere dönüştürülür?,"Hidrojen (enerji), radyasyon kalkanı ve termal depolama."
+Fazz-4 anayasasına göre asimetrik şifreleme için önerilen standartlar nelerdir?,RSA-4096 veya Ed25519.
+Fazz-4 sisteminde 'Golden Signals' olarak adlandırılan dört metrik nedir?,"Latency (Gecikme), Traffic (Trafik), Errors (Hatalar), Saturation (Doygunluk)."
+Fazz-4'te 'Security Audit' (Güvenlik Denetimi) ne sıklıkla yapılmalıdır?,Yılda en az 1 kez.
+Fazz-4'te 'RTO' (Recovery Time Objective) hedefi nedir?,$<4$ saat.
+Fazz-4 'Military Core' verim dağılımına göre motor dışındaki sistem ısısı (System Heat) ne kadardır?,$\%65$.
+Fazz-4 teorisinde 'Saman' karakteri neyi kişileştirir?,Zaman (Time) kavramını.
+Fazz-4 anayasasına göre Python'da 'Mutable default arguments' kullanımı hakkındaki kural nedir?,Kullanımı yasaktır.
+Fazz-4 sisteminde verilerin fiziksel olarak silinmesi işlemine ne ad verilir?,Hard delete.
+Fazz-4 anayasasına göre CI çekirdekleri için hangi dosya formatı konfigürasyonları içerir?,YAML (.yaml).
+Fazz-4 projesinde 'DOI' numarası olarak ne tanımlanmıştır?,10.5281/zenodo.18183914
+Fazz-4 mimarisinde 'Presentation Layer' nerede konumlanmıştır?,src/interfaces/ dizininde.
+Fazz-4 performans hedeflerine göre veritabanı sorgusu (Database Query) P50 süresi ne olmalıdır?,$<10ms$.
+Fazz-4'te 'mTLS' protokolü nerede zorunludur?,Kurum içi iletişimde.
+Fazz-4 sisteminde 'Audit Logging' hangi işlemler için yapılır?,Tüm kritik işlemler için.
+Fazz-4'te 'TDD' (Test-Driven Development) döngüsü nasıldır?,Red-Green-Refactor.
+Fazz-4 anayasasına göre Major versiyon desteği 'Deprecated' özellikler için ne kadar sürer?,En az 2 major versiyon.
+Fazz-4 mimarisinde 'Neural Engine' hangi amaçla değerlendirilmelidir?,Activation layer'lar (yapay sinir ağları) için.
+Fazz-4'te 'Unified Memory Architecture' hangi donanım optimizasyonu için göz önünde bulundurulmalıdır?,Apple Silicon (Mac M2).
