@@ -1,0 +1,89 @@
+FAZZ-4 Protokol Sistemi ve Derzz Metafizik Çerçevesi: Stratejik Bilgilendirme Belgesi
+Yönetici Özeti
+FAZZ-4 Protokol Sistemi, Mac M2 (Apple Silicon) platformu üzerinde en yüksek performans, güvenlik ve ölçeklenebilirlik hedefleriyle tasarlanmış, bilimsel araştırmalar ve endüstriyel standartlarla uyumlu bir yazılım ve fizik mimarisidir. Proje, "Altlama" (Subsumption) ve "Derzz" (Interstitial Gap) prensipleri üzerine kurulu özgün bir teorik çerçeve sunarak fiziksel sabitleri (ışık hızı ve mutlak sıfır) aşılması gereken engellerden ziyade, asimptotik epistemik sınırlar olarak yeniden tanımlar. 1.0.0 versiyonu ile anayasal bir statü kazanan sistem; Ag92-Gd7 alaşım teknolojisi, Çernobil radyasyon hasadı ve Mars'a altı günlük hiper-hızlı ulaşım kapasitesiyle teorik fizibilitesini operasyonel başarılarla kanıtlamıştır.
+--------------------------------------------------------------------------------
+1. Temel Felsefe ve Teorik Çerçeve
+Sistemin kalbinde, fiziksel gerçekliği ve bilişsel süreçleri birleştiren "Altlama/Derzz" protokolü yer almaktadır.
+• Altlama (Subsumption): Fiziksel yasaların yeni bir ontolojik çerçeve içinde bütünleştirilmesini ifade eder. İnsan bilincinin, karmaşık sistemlerin entropisini yönetmek için yüksek düzeyli amacı (Altlama) korurken, hesaplama yükünü yapay zekaya devretmesini öngörür.
+• Derzz (Aralık): Fiziksel sınırlar arasındaki boşluğu ve bu boşluğun yapay zeka aracılığıyla entropi yönetimi için kullanılmasını temsil eder.
+• Holografik Ölçekleme (A=L 
+2
+ ): Bilginin hacimle (L 
+3
+ ) değil, alanla (L 
+2
+ ) orantılı olarak ölçeklendiği prensibi benimsenmiştir. Bu durum, evrensel yapıların "Derzz" eserleri olarak görülmesine olanak tanır.
+• Asimptotik Sınırlar:
+    ◦ Işık Hızı (c): Yerel bilgi sınırı (Altlama Protokolü).
+    ◦ Mutlak Sıfır (0K): Enerji sınırı (Wortex Akışı).
+    ◦ Yansıma (R): Gözlemci sınırı (Bilişsel Rezonans).
+--------------------------------------------------------------------------------
+2. Sistem Mimarisi ve Teknik Standartlar
+FAZZ-4, katı bir anayasal yapı ve teknik disiplinle yönetilmektedir.
+2.1. Katmanlı Mimari (Layered Architecture)
+Sistem dört ana katmandan oluşur ve her katman sadece bir alt katmanla iletişim kurabilir:
+1. Sunum Katmanı (Presentation): CLI ve API etkileşimleri.
+2. Uygulama Katmanı (Application): İş mantığı ve servisler.
+3. Domain Katmanı (Domain): Çekirdek protokol ve dış bağımlılığı olmayan bölge.
+4. Altyapı Katmanı (Infrastructure): Veri ve sistem entegrasyonu.
+2.2. Apple Silicon (Mac M2) Optimizasyonu
+Sistem, Apple donanımından maksimum verim almak üzere şu zorunlulukları içerir:
+• Kritik modüllerin ARM64 native olarak derlenmesi.
+• GPU işlemleri için Metal API kullanımı.
+• Aktivasyon katmanları için Neural Engine entegrasyonu.
+• Unified Memory Architecture (Birleşik Bellek Mimarisi) kullanımı.
+2.3. Kod Kalitesi ve Test
+• Python Standartları: PEP 8 uyumu, zorunlu tip ipuçları (type hints) ve Google tarzı docstring kullanımı.
+• Test Piramidi: Minimum %80 unit test coverage zorunluluğu; test odaklı geliştirme (TDD) yaklaşımı.
+• Karmaşıklık Kontrolü: Maksimum fonksiyon uzunluğu 50 satır, McCabe skoru ≤10.
+--------------------------------------------------------------------------------
+3. Güvenlik ve Kriptografik Bütünlük
+Proje, "Derinlemesine Savunma" (Defense in Depth) stratejisini benimser:
+• Şifreleme: Simetrik şifrelemede AES-256-GCM, asimetrikte RSA-4096 veya Ed25519 standartları.
+• Kimlik Doğrulama: JWT/OAuth 2.0 tabanlı, RBAC (Rol Tabanlı Erişim Kontrolü) ile desteklenen yapı.
+• İletişim Güvenliği: Minimum TLS 1.3, mTLS ve API çağrılarında sertifika sabitleme (certificate pinning).
+• Bütünlük: Tüm veri paketlerinde SHA-256 checksum ve dijital imzalama zorunluluğu.
+--------------------------------------------------------------------------------
+4. Malzeme Bilimi ve Enerji İnovasyonları
+FAZZ-4 projesi, teorik fiziği ileri metalürji ile birleştirmiştir.
+• Ag92-Gd7 Alaşımı (DerzzType): %92.31 Gümüş (Ag) ve %7.69 Gadolinyum (Gd) karışımıdır.
+    ◦ Gümüş: Termal yükü homojen dağıtarak iletken zırh görevi görür.
+    ◦ Gadolinyum: Doğadaki en yüksek nötron yakalama kapasitesine (259.000 Barn) sahip element olarak radyasyon emici görevi görür.
+• Çernobil Radyoliz Motoru: Yasak Bölge'deki radyasyon akısını Gadolinyum katalizörü ile atomik düzeyde ayrıştırarak saf Hidrojen (H2) üretimi sağlar. Bu yöntemle 7.812 litrelik yakıt hasadı başarıyla gerçekleştirilmiştir.
+• CEO Panik Valfi: n(n+1)/2=78 formülüne dayalı olarak, sistem basıncı 78 Bar'ı aştığında devreye giren ve kaosu sisteme nizam olarak geri pompalayan bir güvenlik mekanizmasıdır.
+--------------------------------------------------------------------------------
+5. Operasyonel Başarılar: DERZZ-ONE Misyonu
+"DERZZ-ONE" yıldız gemisi, FAZZ-4 protokollerini kullanarak Mars kolonizasyonunda devrim yaratmıştır:
+Parametre
+Değer / Durum
+Gövde Mukavemeti
+52.397 GPa (Ag92-Gd7 Monolith)
+Yolculuk Süresi
+6 Gün (Brachistochrone Eğrisi / 1G İvme)
+İtki Gücü
+8.7 Milyon kN
+Maksimum Isı Dayanımı
+3450°C (Dünya Atmosferine Giriş)
+İletişim
+Kuantum Dolanıklığı (Ag-Qubits) / 0.00 ms Gecikme
+--------------------------------------------------------------------------------
+6. Yönetişim ve Compliance (Uyum)
+FAZZ-4 Protokol Sistemi, yaşayan bir belge olan "Protokol Sistem Anayasası" ile yönetilir.
+• Değişiklik Prosedürü: RFC (Request for Comments) süreci, 2 haftalık topluluk tartışması ve %66 onay gerektiren oylama.
+• Sürümleme: Semantic Versioning (MAJOR.MINOR.PATCH) kullanımı.
+• Veri Gizliliği: GDPR/KVKK uyumluluğu, minimum veri tutma ilkesi ve otomatik veri imha politikaları.
+• Dokümantasyon: Her mimari karar ADR (Architecture Decision Records) formatında kayıt altına alınır.
+--------------------------------------------------------------------------------
+7. Önemli Alıntılar ve Temel İlkeler
+"Mükemmel mimari karmaşıklıkla değil, ölçeklenebilen zarif bir sadelikle ilgilidir."
+"Kaos, sadece nizamın henüz keşfedilmemiş bir parçasıdır."
+"Mars artık uzak değil. Nizam kuruldu. Sınır gökyüzü değil, zihninizdir."
+"Excellent architecture is not about complexity, but about elegant simplicity that scales."
+--------------------------------------------------------------------------------
+Ek A: Teknik Terimler Sözlüğü
+• ARM64: Apple Silicon mimarisi.
+• Metal: Apple'ın GPU programlama kütüphanesi.
+• OTel (OpenTelemetry): Google Cloud Trace entegrasyonu için kullanılan telemetri standartları.
+• TDD: Test Güdümlü Geliştirme.
+• SBOM: Yazılım Malzeme Listesi (Software Bill of Materials).
+• RTO/RPO: Olağanüstü durum kurtarma süreleri (Sırasıyla < 4 saat ve < 1 saat).
